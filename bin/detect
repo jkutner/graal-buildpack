@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo "GraalVM"
+exit 0
