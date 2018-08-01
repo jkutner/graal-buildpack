@@ -1,10 +1,16 @@
 # GraalVM Buildpack
 
-This [buildpack] will install the GraalVM Community Edition. It can be used with
-Heroku Java buildpacks to replace the default JDK.
+This [buildpack](https://devcenter.heroku.com/articles/buildpacks) will install the GraalVM Community Edition.
 
 ## Usage
 
+This buildpack can be used with the [Heroku Java buildpack](https://github.com/heroku/heroku-buildpack-java/blob/master/bin/compile) to replace the default JDK by running:
+
 ```
 $ heroku buildpacks:set https://github.com/jkutner/graal-buildpack
+$ heroku buildpacks:add heroku/java
 ```
+
+## License
+
+MIT
