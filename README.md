@@ -1,6 +1,6 @@
 # GraalVM Buildpack
 
-This [buildpack](https://devcenter.heroku.com/articles/buildpacks) will install the GraalVM Community Edition.
+This [buildpack](https://devcenter.heroku.com/articles/buildpacks) will install the [GraalVM](https://github.com/oracle/graal) Community Edition.
 
 ## Usage
 
