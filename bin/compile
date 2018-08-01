@@ -10,9 +10,9 @@ install_graal() {
   rm -rf $jdk_dir # clobber any previously installed jdk
   mkdir -p $jdk_dir
 
-  echo "----> Installing GraalVM"
+  echo "-----> Installing GraalVM"
   curl --retry 3 -sL "$url" | tar xzm -C $jdk_dir --strip-components=1
-  echo "      - done"
+  echo "       - done"
 }
 
 create_profile_scripts() {
@@ -21,10 +21,10 @@ create_profile_scripts() {
 
   mkdir -p $home/.profile.d
 
-  echo "----> Configuring"
+  echo "-----> Configuring"
   curl -o $home/.profile.d/graal.sh -sL "$url/opt/jvmcommon.sh"
   curl -o $home/.profile.d/jdbc.sh -sL "$url/opt/jdbc.sh"
-  echo "      - done"
+  echo "       - done"
 }
 
 create_export_script() {
