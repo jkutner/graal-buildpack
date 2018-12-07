@@ -48,7 +48,7 @@ BP_DIR="$(cd "$(dirname "$0")" && pwd)"
 OPT_DIR=$BP_DIR/../opt/
 
 JDK_DIR="$BUILD_DIR/.jdk"
-GRAAL_URL="https://github.com/oracle/graal/releases/download/vm-1.0.0-rc4/graalvm-ce-1.0.0-rc4-linux-amd64.tar.gz"
+GRAAL_URL="https://github.com/oracle/graal/releases/download/vm-1.0.0-rc10/graalvm-ce-1.0.0-rc10-linux-amd64.tar.gz"
 JVM_COMMON_URL="https://raw.githubusercontent.com/heroku/heroku-buildpack-jvm-common/master/"
 
 install_graal $JDK_DIR $GRAAL_URL
